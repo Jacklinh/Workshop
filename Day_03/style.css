@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+.list {
+    font-size: 14px;
+    color: #333;
+}
+.list li {
+    padding: 10px 0;
+}
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 50px;
+}
+.list li a:hover {
+    color: #06f;
+}
+.list li:nth-child(4) {
+    color: red;
+}
+.list li:first-child {
+    color: blue;
+}
+.list li:last-child {
+    color: red;
+}
+.list li:nth-child(2n+2) {
+    background-color: #fafafa;
+}
+/* box_quote */
+.box_quote {
+    background-color: red;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+}
+.box_quote blockquote {
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.box_quote blockquote::before,
+.box_quote blockquote::after {
+    font-size: 32px;
+    position: absolute;
+}
+.box_quote blockquote::before {
+    content: open-quote;
+    vertical-align: top;
+    left: 0;
+    top: -10px;
+}
+.box_quote blockquote::after {
+    content: close-quote;
+    vertical-align: bottom;
+    right: 20px;
+    top: auto;
+    bottom: -20px;
+}
+.box_quote figcaption cite{
+    display: inline-block;
+    vertical-align: middle;
+}
+.box_quote figcaption .avatar {
+    display: inline-block;
+    margin-right: 20px;
+}
+.box_quote figcaption .avatar img {
+    width: 100%;
+    height: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.box_quote figcaption .avatar_name {
+    font-weight: bold;
+    color: 20px;
+}
