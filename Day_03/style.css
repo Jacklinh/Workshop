@@ -35,7 +35,7 @@ h1 {
     color: red;
 }
 .list li:nth-child(2n+2) {
-    background-color: #fafafa;
+    background-color: #f80;
 }
 /* box_quote */
 .box_quote {

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- task3 -->
+    <button onclick="console.log('Bạn đã Click')">click here</button>
+    <script>
+        // task1
+        let a = 10;
+        let b = 3;
+        console.log('a*b=',a*b);
+        console.log('a+b=',a+b);
+        console.log('a-b=',a-b);
+        console.log('a/b=',a/b);
+        a = 5;
+        b= 2;
+        console.log('sau kh thay doi gia tri a = '+a+' và b = '+b+' thì a*b=',a*b);
+        console.log('sau kh thay doi gia tri a = '+a+' và b = '+b+' thì a+b=',a+b);
+        console.log('sau kh thay doi gia tri a = '+a+' và b = '+b+' thì a-b=',a-b);
+        console.log('sau kh thay doi gia tri a = '+a+' và b = '+b+' thì a/b=',a/b);
+
+        // task2
+        let valueX = prompt("nhap gia tri x");
+        let valueY = prompt("nhap gia tri Y");
+        if(valueX && valueY) {
+            console.log('gia tri x * y =',parseInt(valueX) * parseInt(valueY));
+            console.log('gia tri x + y =',parseInt(valueX) + parseInt(valueY));
+            console.log('gia tri x - y =',parseInt(valueX) - parseInt(valueY));
+        }
+        // task4
+        let name = 'Nguyễn Văn A';
+        let age = 20;
+        let sex = false; // true la nam
+        let address = 'Hà Nội';
+        if(sex === true){
+            sex = 'Nam';
+        }else {
+            sex = 'NU'
+        }
+        console.log('sinh viên tên là '+name+ ', Tuổi là '+age+ ', Giới tính '+sex+ ', Quê: '+address);
+    </script>
+</body>
+</html>

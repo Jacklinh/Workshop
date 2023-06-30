@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        .navigation {
+            background-color: brown;
+
+        }
+        .navigation>ul{
+            display: flex;
+            column-gap: 30px;
+            list-style: none;
+        }
+        .navigation>ul>li{
+            display: flex;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>header is header</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main_content">
+                <section class="product_photo">
+                    <article class="product_item">
+                        product photo
+                    </article>
+                    <article class="product_item">
+                        product photo
+                    </article>
+                </section>
+                <section class="tags">
+                    section tag
+                </section>
+            </div>
+            <aside>
+                <p>i am an aside</p>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facere repudiandae, veritatis fuga iste hic accusamus quae fugiat sunt rem suscipit optio dolore possimus esse nam aspernatur repellendus cum tenetur!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
