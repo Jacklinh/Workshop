@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div id="show_array"></div>
+    <script>
+        // task 1
+        let numberA = prompt('nhap vao 1 so');
+        if(parseInt(numberA) % 2 === 0) {
+            console.log('so nhap vao la so chan');
+        }else {
+            console.log('so nhap vao la so le');
+        }
+        // task 2
+        let dateWeek = prompt('nhap vao cac ngay trong tuan'); 
+        dateWeek = parseInt(dateWeek);
+        switch(dateWeek) {
+            case 2:
+            case 3:
+                console.log('hom nay la dau tuan');
+                break;
+            case 4:
+            case 5:
+            case 6:
+                console.log('hom nay la giua tuan');
+                break;
+            case 7:
+            case 8:
+                console.log('hom nay la cuoi tuan');
+                break;
+            default:
+                console.log('khong hop le');
+            break;
+        }
+        /* 
+            task 3
+            Thêm vào mảng trên ngày: 'Chủ nhật' ở cuối mảng
+            Sửa ngày: `Thứ x` lại thành tên đúng là  `Thứ 4`
+            Xóa ngày `Thứ y` ra khỏi mảng trên.
+            Hiển thị danh sách các ngày trên ra màn hình.
+
+        */
+        let myArr = ['Thứ 2', 'Thứ y', 'Thứ 3', 'Thứ x', 'Thứ 5', 'Thứ 6', 'Thứ 7'];
+        myArr.push('Chủ nhật');
+        myArr.splice(3,1,'Thứ 4');
+        myArr.splice(1,1);
+        document.getElementById('show_array').innerHTML = myArr;
+    </script>
+</body>
+</html>
